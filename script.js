@@ -26,7 +26,6 @@ const hexToDecimal = (hex) => {
     return parseInt(hexColor, 16); // 将HEX转为十进制
 };
 
-// 获取数字事实
 const fetchNumberFact = async (number) => {
     try {
         const response = await fetch(`http://numbersapi.com/${number}?json`);
