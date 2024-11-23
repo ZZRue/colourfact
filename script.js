@@ -31,7 +31,7 @@ const hexToDecimal = (hex) => {
 // 获取数字事实
 const fetchNumberFact = async (number) => {
     try {
-        const response = await fetch(`http://numbersapi.com/${number}?json`);
+        const response = await fetch(`https://numbersapi.com/${number}?json`);
         const data = await response.json();
 
         if (data && data.text) {
