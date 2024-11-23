@@ -21,9 +21,7 @@ const fetchRandomColor = async () => {
     }
 };
 
-// HEX转十进制
 const hexToDecimal = (hex) => {
-    // 移除前缀
     const hexColor = hex.replace("#", "");
     return parseInt(hexColor, 16); // 将HEX转为十进制
 };
@@ -45,5 +43,4 @@ const fetchNumberFact = async (number) => {
     }
 };
 
-// 点击按钮时触发随机颜色生成并展示数字事实
 generateButton.addEventListener("click", fetchRandomColor);
